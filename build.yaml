@@ -8,7 +8,7 @@ steps:
     dockerFile:
       inline: |
         FROM {{ global.docker_root_image }}
-        RUN apt-get update && apt-get install -y git
+        RUN apt-get update && apt-get install -y git 
   - kind: runImage
     name: run_inline_image
     image:
